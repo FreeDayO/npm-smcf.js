@@ -1,0 +1,23 @@
+{
+  "name": "smcf.js",
+  "version": "1.0.0-alpha.0",
+  "description": "a 3rd-party smcf.js lib for node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/XiaozhiSans/node-smcf.js.git"
+  },
+  "keywords": [
+    "smcf",
+    "freedayo"
+  ],
+  "author": "XiaozhiSans",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/XiaozhiSans/node-smcf.js/issues"
+  },
+  "homepage": "https://github.com/XiaozhiSans/node-smcf.js#readme"
+}
