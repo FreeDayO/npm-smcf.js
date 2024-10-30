@@ -64,11 +64,11 @@ const smcf = {
         return str;
     },
     tp(f,t) {
-        (!t || t == '')? function() {
-            put("# 传送到" + f);
+        if(!t || t == '') {
+            put("# 传送到" + f)
             put("tp " + f)
-            return f;
-        }(): undefined;
+            return f
+        }
         put("#将" + f + "传送到" + t );
         put("tp " + f + " " + t );
         return t;
