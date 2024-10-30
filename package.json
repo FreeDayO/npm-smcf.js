@@ -1,23 +1,34 @@
 {
   "name": "smcf.js",
-  "version": "1.0.0-beta.0",
-  "description": "a 3rd-party smcf.js lib for node.js",
-  "main": "index.js",
+  "version": "1.1.0-beta.0",
+  "description": "smcf.js lib for node.js",
+  "main": "./index.cjs",
+  "module": "./esm/index.mjs",
+  "exports": {
+    ".": {
+      "require": "./index.cjs",
+      "import": "./esm/index.mjs"
+    }
+  },
   "scripts": {
-    "test": "node test.js"
+    "test": "echo \"Error: \"test\" command is not available now. Please use \"test -c\" or \"test -m\" instead.\"",
+    "test -c": "node test.cjs",
+    "test -m": "node --experimental-modules test.mjs"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/XiaozhiSans/node-smcf.js.git"
+    "url": "git+https://github.com/XiaozhiSans/npm-smcf.js.git"
   },
   "keywords": [
     "smcf",
+    "minecraftbedrock",
+    "mcfunction",
     "freedayo"
   ],
   "author": "XiaozhiSans",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/XiaozhiSans/node-smcf.js/issues"
+    "url": "https://github.com/XiaozhiSans/npm-smcf.js/issues"
   },
-  "homepage": "https://github.com/XiaozhiSans/node-smcf.js#readme"
+  "homepage": "https://github.com/XiaozhiSans/npm-smcf.js#readme"
 }
